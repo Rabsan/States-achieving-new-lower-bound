@@ -1,8 +1,8 @@
-# Gaussian thermal attenuator
+# Coherent information for the Gaussian limit of the qubit depolarizing channel on the symmetric subspace
 
 This repository has the code and input states for the numerical result in
 
-R. G. Ahmed, S. Bhalerao, S. Lee, F. Leditzky, D. Leung, L. Schaeffer, and G. Smith, "A depolarizing choir sings in Gaussian harmony", [arXiv:2609.39747](https://arxiv.org/abs/2609.39747) (2026).
+> R. G. Ahmed, S. Bhalerao, S. Lee, F. Leditzky, D. Leung, L. Schaeffer, and G. Smith, "A depolarizing choir sings in Gaussian harmony", [arXiv:2609.39747](https://arxiv.org/abs/2609.39747) (2026).
 
 The code computes the coherent information of a rank-two input state $\rho = q|\psi_0\rangle\langle\psi_0| + (1-q)|\psi_1\rangle\langle\psi_1|$ through the Gaussian channel $\mathcal{A}_G \circ \mathcal{L}_T$, with $T = 2\eta^2/(1+\eta)$ and $G = (1+\eta)/(2\eta)$. The codeword $\psi_0$ is supported on Fock states $n \equiv 0 \pmod 3$ and $\psi_1$ on $n \equiv 1 \pmod 3$. All arithmetic uses Arb intervals and verified eigenvalues. A run that reports `positive_certified` proves that the coherent information of the full, untruncated channel is positive.
 
